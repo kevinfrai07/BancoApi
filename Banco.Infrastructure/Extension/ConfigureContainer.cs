@@ -1,6 +1,5 @@
-﻿
+﻿using Microsoft.AspNetCore.Builder;
 using Banco.Infraestructure.Middleware;
-using Microsoft.AspNetCore.Builder;
 
 namespace Banco.Infraestructure.Extension
 {

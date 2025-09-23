@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Banco.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc204dbb4b4c80c50fb9942982a011f0390e5af8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Banco.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Banco.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
