@@ -3,28 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\bancoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|solutionrelative:bancoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\bancoapi\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|solutionrelative:bancoapi\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.domain\\entity\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|solutionrelative:banco.domain\\entity\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.domain\\entity\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|solutionrelative:banco.domain\\entity\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.service\\features\\personafeatures\\queries\\getpersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|solutionrelative:banco.service\\features\\personafeatures\\queries\\getpersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\bancoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|solutionrelative:bancoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{126A400E-D75F-4F21-8C67-EEDA68C5AE40}|Banco.Infrastructure\\Banco.Infrastructure.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.infrastructure\\extension\\configureservicecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{126A400E-D75F-4F21-8C67-EEDA68C5AE40}|Banco.Infrastructure\\Banco.Infrastructure.csproj|solutionrelative:banco.infrastructure\\extension\\configureservicecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754A7A31-112B-46AF-A6A6-C8A65395712B}|Banco.Persistence\\Banco.Persistence.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{754A7A31-112B-46AF-A6A6-C8A65395712B}|Banco.Persistence\\Banco.Persistence.csproj|solutionrelative:banco.persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754A7A31-112B-46AF-A6A6-C8A65395712B}|Banco.Persistence\\Banco.Persistence.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.persistence\\iapplicationdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{754A7A31-112B-46AF-A6A6-C8A65395712B}|Banco.Persistence\\Banco.Persistence.csproj|solutionrelative:banco.persistence\\iapplicationdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\bancoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|solutionrelative:bancoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\bancoapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|solutionrelative:bancoapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{126A400E-D75F-4F21-8C67-EEDA68C5AE40}|Banco.Infrastructure\\Banco.Infrastructure.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.infrastructure\\extension\\configurecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{126A400E-D75F-4F21-8C67-EEDA68C5AE40}|Banco.Infrastructure\\Banco.Infrastructure.csproj|solutionrelative:banco.infrastructure\\extension\\configurecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.domain\\entity\\movimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|solutionrelative:banco.domain\\entity\\movimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\bancoapi\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|solutionrelative:bancoapi\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.domain\\entity\\cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|solutionrelative:banco.domain\\entity\\cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{126A400E-D75F-4F21-8C67-EEDA68C5AE40}|Banco.Infrastructure\\Banco.Infrastructure.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{126A400E-D75F-4F21-8C67-EEDA68C5AE40}|Banco.Infrastructure\\Banco.Infrastructure.csproj|solutionrelative:banco.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{126A400E-D75F-4F21-8C67-EEDA68C5AE40}|Banco.Infrastructure\\Banco.Infrastructure.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.infrastructure\\middleware\\customexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{126A400E-D75F-4F21-8C67-EEDA68C5AE40}|Banco.Infrastructure\\Banco.Infrastructure.csproj|solutionrelative:banco.infrastructure\\middleware\\customexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|solutionrelative:banco.service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,76 +78,177 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "BancoAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\appsettings.json",
-              "RelativeToolTip": "BancoAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-23T20:21:39.538Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "BancoAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "BancoAPI\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAIwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-23T20:16:58.784Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ConfigureContainer.cs",
-              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Infrastructure\\Extension\\ConfigureContainer.cs",
-              "RelativeDocumentMoniker": "Banco.Infrastructure\\Extension\\ConfigureContainer.cs",
-              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Infrastructure\\Extension\\ConfigureContainer.cs",
-              "RelativeToolTip": "Banco.Infrastructure\\Extension\\ConfigureContainer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T19:54:23.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Infrastructure\\Class1.cs",
-              "RelativeDocumentMoniker": "Banco.Infrastructure\\Class1.cs",
-              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Infrastructure\\Class1.cs",
-              "RelativeToolTip": "Banco.Infrastructure\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T19:05:22.918Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PersonaController.cs",
-              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Controllers\\PersonaController.cs",
-              "RelativeDocumentMoniker": "BancoAPI\\Controllers\\PersonaController.cs",
-              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Controllers\\PersonaController.cs",
-              "RelativeToolTip": "BancoAPI\\Controllers\\PersonaController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFMAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T19:02:01.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Program.cs",
               "RelativeDocumentMoniker": "BancoAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Program.cs",
               "RelativeToolTip": "BancoAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T19:01:40.405Z",
+              "WhenOpened": "2025-09-23T19:01:40.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Controllers\\PersonaController.cs",
+              "RelativeDocumentMoniker": "BancoAPI\\Controllers\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Controllers\\PersonaController.cs",
+              "RelativeToolTip": "BancoAPI\\Controllers\\PersonaController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwEoAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T19:02:01.968Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Cuenta.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\Entity\\Cuenta.cs",
+              "RelativeDocumentMoniker": "Banco.Domain\\Entity\\Cuenta.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\Entity\\Cuenta.cs",
+              "RelativeToolTip": "Banco.Domain\\Entity\\Cuenta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T18:39:48.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Persistence\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Banco.Persistence\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Persistence\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Banco.Persistence\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T18:14:49.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConfigureServiceContainer.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Infrastructure\\Extension\\ConfigureServiceContainer.cs",
+              "RelativeDocumentMoniker": "Banco.Infrastructure\\Extension\\ConfigureServiceContainer.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Infrastructure\\Extension\\ConfigureServiceContainer.cs",
+              "RelativeToolTip": "Banco.Infrastructure\\Extension\\ConfigureServiceContainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T19:23:53.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\Entity\\Persona.cs",
+              "RelativeDocumentMoniker": "Banco.Domain\\Entity\\Persona.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\Entity\\Persona.cs",
+              "RelativeToolTip": "Banco.Domain\\Entity\\Persona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T18:39:56.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetPersona.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Service\\Features\\PersonaFeatures\\Queries\\GetPersona.cs",
+              "RelativeDocumentMoniker": "Banco.Service\\Features\\PersonaFeatures\\Queries\\GetPersona.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Service\\Features\\PersonaFeatures\\Queries\\GetPersona.cs",
+              "RelativeToolTip": "Banco.Service\\Features\\PersonaFeatures\\Queries\\GetPersona.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAawC0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T18:37:27.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\Entity\\Cliente.cs",
+              "RelativeDocumentMoniker": "Banco.Domain\\Entity\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\Entity\\Cliente.cs",
+              "RelativeToolTip": "Banco.Domain\\Entity\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T18:39:43.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "BancoAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\appsettings.json",
+              "RelativeToolTip": "BancoAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-23T20:21:39.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IApplicationDbContext .cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Persistence\\IApplicationDbContext .cs",
+              "RelativeDocumentMoniker": "Banco.Persistence\\IApplicationDbContext .cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Persistence\\IApplicationDbContext .cs",
+              "RelativeToolTip": "Banco.Persistence\\IApplicationDbContext .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T18:15:22.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "BancoAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "BancoAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-24T19:18:24.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Service\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Banco.Service\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Service\\DependencyInjection.cs",
+              "RelativeToolTip": "Banco.Service\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T18:12:14.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Movimientos.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\Entity\\Movimientos.cs",
+              "RelativeDocumentMoniker": "Banco.Domain\\Entity\\Movimientos.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\Entity\\Movimientos.cs",
+              "RelativeToolTip": "Banco.Domain\\Entity\\Movimientos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T18:39:52.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Infrastructure\\Middleware\\CustomExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "Banco.Infrastructure\\Middleware\\CustomExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Infrastructure\\Middleware\\CustomExceptionMiddleware.cs",
+              "RelativeToolTip": "Banco.Infrastructure\\Middleware\\CustomExceptionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T18:24:56.715Z"
             }
           ]
         }

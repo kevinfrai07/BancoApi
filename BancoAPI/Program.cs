@@ -1,7 +1,33 @@
-using Microsoft.OpenApi.Models;
+using Banco.Service;
+using Banco.Infrastructure.Extension;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+var SpecificOrigins = "_SpecificOrigins";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: SpecificOrigins,
+        policy =>
+        {
+            policy
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();  
+        });
+});
+IConfigurationRoot configRoot = builder.Configuration;
+IConfigurationBuilder root = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json");
+configRoot = root.Build();
+
+builder.Services.AddDbContext(builder.Configuration, configRoot);
+
+builder.Services.AddScopedServices();
+
+builder.Services.AddTransientServices();
+
+builder.Services.AddServiceLayer();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -23,6 +49,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(SpecificOrigins);
 
 app.UseAuthorization();
 

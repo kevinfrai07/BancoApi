@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Banco.Infraestructure.Middleware;
+﻿using Banco.Infrastructure.Middleware;
+using Microsoft.AspNetCore.Builder;
 
-namespace Banco.Infraestructure.Extension
+namespace Banco.Infrastructure.Extension
 {
     /// <summary>
     /// Extension del contenedor de configuracion de servicios

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Banco.Service.Features.PersonaFeatures.Queries
 {
-    public class GetPersona : IRequest<ResponseDTO>
+    public class    GetPersona : IRequest<ResponseDTO>
     {
         public class GetUsersHandler : IRequestHandler<GetPersona, ResponseDTO>
         {
@@ -20,7 +20,7 @@ namespace Banco.Service.Features.PersonaFeatures.Queries
             public async Task<ResponseDTO> Handle(GetPersona request, CancellationToken cancellationToken)
             {
                 ResponseDTO respuesta = new ResponseDTO();
-                string error = "Error consultando por UID";
+                string error = "Error consultando tabla personas";
 
                 try
                 {
@@ -43,7 +43,7 @@ namespace Banco.Service.Features.PersonaFeatures.Queries
 
 
                     respuesta.responseStatus = 200;
-                    respuesta.responseData = responseData;
+                    respuesta.responseData = usuario;
                     return respuesta;
                 }
                 catch (Exception e)

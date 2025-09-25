@@ -9,7 +9,6 @@ namespace Banco.Persistence
         DbSet<Cliente> Clientes { get; set; }
         DbSet<Cuenta> Cuentas { get; set; }
         DbSet<Movimiento> Movimientos { get; set; }
-
-        Task<int> SaveChangesAsync();
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }

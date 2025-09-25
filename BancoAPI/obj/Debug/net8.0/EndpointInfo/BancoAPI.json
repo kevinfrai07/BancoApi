@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Persona/Persona": {
+    "/Persona": {
       "get": {
         "tags": [
           "Persona"
@@ -80,7 +80,7 @@
         }
       }
     },
-    "/api/Persona/Persona/{Id}": {
+    "/Persona/Persona/{Id}": {
       "get": {
         "tags": [
           "Persona"
@@ -215,31 +215,6 @@
   },
   "components": {
     "schemas": {
-      "Cliente": {
-        "type": "object",
-        "properties": {
-          "clienteId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "personaId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "contrasenia": {
-            "type": "string",
-            "nullable": true
-          },
-          "estado": {
-            "type": "string",
-            "nullable": true
-          },
-          "persona": {
-            "$ref": "#/components/schemas/Persona"
-          }
-        },
-        "additionalProperties": false
-      },
       "IActionResult": {
         "type": "object",
         "additionalProperties": false
@@ -275,9 +250,6 @@
           "telefono": {
             "type": "string",
             "nullable": true
-          },
-          "cliente": {
-            "$ref": "#/components/schemas/Cliente"
           }
         },
         "additionalProperties": false

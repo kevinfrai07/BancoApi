@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 using System.Net;
 using System.Text.Json;
 
-namespace Banco.Infraestructure.Middleware
+namespace Banco.Infrastructure.Middleware
 {
     public class CustomExceptionMiddleware
     {

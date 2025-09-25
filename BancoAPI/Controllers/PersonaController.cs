@@ -4,7 +4,6 @@ using Banco.Service.Features.PersonaFeatures.Commands;
 using Banco.Service.Features.PersonaFeatures.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace BancoAPI.Controllers
@@ -12,20 +11,19 @@ namespace BancoAPI.Controllers
     /// <summary>
     /// 
     /// </summary>
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class PersonaController : ControllerBase
     {
-        private const string get = "Persona";
+        private const string get = "";
         private const string getById = "Persona/{Id}";
-        private const string Create = "Persona";
+        private const string Create = "";
         private const string Update = "Persona/{Id}";
         private const string Delete = "Persona/{Id}";
 
         #region Private fields
 
         private readonly IMediator _mediator;
-        private readonly IMemoryCache _memoryCache;
 
         #endregion Private fields
 
@@ -35,10 +33,9 @@ namespace BancoAPI.Controllers
         /// 
         /// </summary>
         /// <param name="mediator"></param>
-        public PersonaController(IMediator mediator, IMemoryCache memoryCache)
+        public PersonaController(IMediator mediator)
         {
             _mediator = mediator;
-            _memoryCache = memoryCache;
         }
 
         #endregion Constructor
@@ -64,15 +61,9 @@ namespace BancoAPI.Controllers
         public async Task<ActionResult> GetPersonaById(string Id)
         {
             string cacheName = Id;
-            var cacheOptions = new MemoryCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromHours(2));
 
-            if (_memoryCache.TryGetValue(cacheName, out ResponseDTO response))
-            {
-                return Ok(response);
-            }
 
-            response = await _mediator.Send(new GetPersonaById { IdPersona = int.Parse(Id), });
-            _memoryCache.Set(cacheName, response, cacheOptions);
+            var response = await _mediator.Send(new GetPersonaById { IdPersona = int.Parse(Id), });
             return Ok(response);
         }
 

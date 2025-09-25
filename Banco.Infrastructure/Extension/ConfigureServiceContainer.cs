@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Banco.Infraestructure.Extension
+namespace Banco.Infrastructure.Extension
 {
     /// <summary>
     ///
@@ -12,10 +12,11 @@ namespace Banco.Infraestructure.Extension
     {
 
         public static void AddDbContext(this IServiceCollection serviceCollection,
-             IConfiguration configuration)
+             IConfiguration configuration, IConfigurationRoot configRoot)
         {
             serviceCollection.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DbPrueba"))
+                options.UseMySql(configuration.GetConnectionString("BancoDb"),
+                ServerVersion.AutoDetect(configuration.GetConnectionString("BancoDb")))
              );
         }
 

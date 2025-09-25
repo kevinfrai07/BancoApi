@@ -2,7 +2,7 @@
   {
     "ContainingType": "BancoAPI.Controllers.PersonaController",
     "Method": "GetAllPersona",
-    "RelativePath": "api/Persona/Persona",
+    "RelativePath": "Persona",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -22,7 +22,7 @@
   {
     "ContainingType": "BancoAPI.Controllers.PersonaController",
     "Method": "CreatePersona",
-    "RelativePath": "api/Persona/Persona",
+    "RelativePath": "Persona",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -48,7 +48,7 @@
   {
     "ContainingType": "BancoAPI.Controllers.PersonaController",
     "Method": "GetPersonaById",
-    "RelativePath": "api/Persona/Persona/{Id}",
+    "RelativePath": "Persona/Persona/{Id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -74,7 +74,7 @@
   {
     "ContainingType": "BancoAPI.Controllers.PersonaController",
     "Method": "UpdatePersona",
-    "RelativePath": "api/Persona/Persona/{Id}",
+    "RelativePath": "Persona/Persona/{Id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -105,7 +105,7 @@
   {
     "ContainingType": "BancoAPI.Controllers.PersonaController",
     "Method": "DeletePersona",
-    "RelativePath": "api/Persona/Persona/{Id}",
+    "RelativePath": "Persona/Persona/{Id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
