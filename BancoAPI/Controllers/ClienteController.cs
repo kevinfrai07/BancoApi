@@ -1,7 +1,6 @@
-﻿using Banco.Domain.DTO;
-using Banco.Domain.Entity;
-using Banco.Service.Features.PersonaFeatures.Commands;
-using Banco.Service.Features.PersonaFeatures.Queries;
+﻿using Banco.Domain.Entity;
+using Banco.Service.Features.ClienteFeatures.Commands;
+using Banco.Service.Features.ClienteFeatures.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
@@ -13,7 +12,7 @@ namespace BancoAPI.Controllers
     /// </summary>
     [Route("[controller]")]
     [ApiController]
-    public class PersonaController : ControllerBase
+    public class ClienteController : ControllerBase
     {
         private const string get = "";
         private const string getById = "{Id}";
@@ -33,7 +32,7 @@ namespace BancoAPI.Controllers
         /// 
         /// </summary>
         /// <param name="mediator"></param>
-        public PersonaController(IMediator mediator)
+        public ClienteController(IMediator mediator)
         {
             _mediator = mediator;
         }
@@ -46,52 +45,52 @@ namespace BancoAPI.Controllers
         ///
         /// </summary>
         /// <returns></returns>
-        [SwaggerOperation(Summary = "Get All Persona", Description = "Returns All Persona", OperationId = "GetAllPersona")]
+        [SwaggerOperation(Summary = "Get All Cliente", Description = "Returns All Cliente", OperationId = "GetAllCliente")]
         [SwaggerResponse(StatusCodes.Status200OK, "Request Successful", typeof(IActionResult))]
         [HttpGet(get)]
-        public async Task<ActionResult> GetAllPersona()
+        public async Task<ActionResult> GetAllCliente()
         {
-            var response = await _mediator.Send(new GetPersona { });
+            var response = await _mediator.Send(new GetCliente { });
             return StatusCode((int)response.responseStatus, response);
         }
 
-        [SwaggerOperation(Summary = "Get Persona By Id", Description = "Return Persona by Id", OperationId = "GetPersonaById")]
+        [SwaggerOperation(Summary = "Get Cliente By Id", Description = "Return Cliente by Id", OperationId = "GetClienteById")]
         [SwaggerResponse(StatusCodes.Status200OK, "Request Successful", typeof(IActionResult))]
         [HttpGet(getById)]
-        public async Task<ActionResult> GetPersonaById(string Id)
+        public async Task<ActionResult> GetClienteById(string Id)
         {
             string cacheName = Id;
 
 
-            var response = await _mediator.Send(new GetPersonaById { IdPersona = int.Parse(Id), });
+            var response = await _mediator.Send(new GetClienteById { IdCliente = int.Parse(Id), });
             return Ok(response);
         }
 
-        [SwaggerOperation(Summary = "Create Persona", Description = "Create New Persona", OperationId = "CreatePersona")]
+        [SwaggerOperation(Summary = "Create Cliente", Description = "Create New Cliente", OperationId = "CreateCliente")]
         [SwaggerResponse(StatusCodes.Status200OK, "Request Successful", typeof(IActionResult))]
         [HttpPost(Create)]
-        public async Task<ActionResult> CreatePersona(Persona persona)
+        public async Task<ActionResult> CreateCliente(Cliente Cliente)
         {
-            var response = await _mediator.Send(new CreatePersonaCommand { Persona = persona, });
+            var response = await _mediator.Send(new CreateClienteCommand { Cliente = Cliente, });
             return StatusCode((int)response.responseStatus, response);
         }
 
 
-        [SwaggerOperation(Summary = "Update Persona", Description = "Update Persona By Id", OperationId = "UpdatePersona")]
+        [SwaggerOperation(Summary = "Update Cliente", Description = "Update Cliente By Id", OperationId = "UpdateCliente")]
         [SwaggerResponse(StatusCodes.Status200OK, "Request Successful", typeof(IActionResult))]
         [HttpPut(Update)]
-        public async Task<ActionResult> UpdatePersona(string Id, [FromBody] Persona Persona)
+        public async Task<ActionResult> UpdateCliente(string Id, [FromBody] Cliente Cliente)
         {
-            var response = await _mediator.Send(new UpdatePersonaCommand { IdPersona = int.Parse(Id), Persona = Persona });
+            var response = await _mediator.Send(new UpdateClienteCommand { IdCliente = int.Parse(Id), Cliente = Cliente });
             return StatusCode((int)response.responseStatus, response);
         }
 
-        [SwaggerOperation(Summary = "DeletePersona Persona", Description = "DeletePersona Persona By", OperationId = "DeletePersona")]
+        [SwaggerOperation(Summary = "DeleteCliente Cliente", Description = "DeleteCliente Cliente By", OperationId = "DeleteCliente")]
         [SwaggerResponse(StatusCodes.Status200OK, "Request Successful", typeof(IActionResult))]
         [HttpDelete(Delete)]
-        public async Task<ActionResult> DeletePersona(string Id)
+        public async Task<ActionResult> DeleteCliente(string Id)
         {
-            var response = await _mediator.Send(new DeletePersonaCommand { IdPersona = int.Parse(Id) });
+            var response = await _mediator.Send(new DeleteClienteCommand { IdCliente = int.Parse(Id) });
             return StatusCode((int)response.responseStatus, response);
         }
         #endregion

@@ -1,5 +1,134 @@
 [
   {
+    "ContainingType": "BancoAPI.Controllers.ClienteController",
+    "Method": "GetAllCliente",
+    "RelativePath": "Cliente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.IActionResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BancoAPI.Controllers.ClienteController",
+    "Method": "CreateCliente",
+    "RelativePath": "Cliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Cliente",
+        "Type": "Banco.Domain.Entity.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.IActionResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BancoAPI.Controllers.ClienteController",
+    "Method": "GetClienteById",
+    "RelativePath": "Cliente/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.IActionResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BancoAPI.Controllers.ClienteController",
+    "Method": "UpdateCliente",
+    "RelativePath": "Cliente/{Id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Cliente",
+        "Type": "Banco.Domain.Entity.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.IActionResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BancoAPI.Controllers.ClienteController",
+    "Method": "DeleteCliente",
+    "RelativePath": "Cliente/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.IActionResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "BancoAPI.Controllers.PersonaController",
     "Method": "GetAllPersona",
     "RelativePath": "Persona",
@@ -48,7 +177,7 @@
   {
     "ContainingType": "BancoAPI.Controllers.PersonaController",
     "Method": "GetPersonaById",
-    "RelativePath": "Persona/Persona/{Id}",
+    "RelativePath": "Persona/{Id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -74,7 +203,7 @@
   {
     "ContainingType": "BancoAPI.Controllers.PersonaController",
     "Method": "UpdatePersona",
-    "RelativePath": "Persona/Persona/{Id}",
+    "RelativePath": "Persona/{Id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -105,7 +234,7 @@
   {
     "ContainingType": "BancoAPI.Controllers.PersonaController",
     "Method": "DeletePersona",
-    "RelativePath": "Persona/Persona/{Id}",
+    "RelativePath": "Persona/{Id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

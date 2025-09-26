@@ -5,36 +5,36 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Banco.Service.Features.PersonaFeatures.Commands
+namespace Banco.Service.Features.ClienteFeatures.Commands
 {
-    public class UpdatePersonaCommand : IRequest<ResponseDTO>
+    public class UpdateClienteCommand : IRequest<ResponseDTO>
     {
-        public int IdPersona { get; set; }
-        public Persona Persona { get; set; }
+        public int IdCliente { get; set; }
+        public Cliente Cliente { get; set; }
 
-        public class UpdatePersonaCommandHandler : IRequestHandler<UpdatePersonaCommand, ResponseDTO>
+        public class UpdateClienteCommandHandler : IRequestHandler<UpdateClienteCommand, ResponseDTO>
         {
             private readonly IApplicationDbContext _context;
 
-            public UpdatePersonaCommandHandler(
+            public UpdateClienteCommandHandler(
                 IApplicationDbContext context
             )
             {
                 _context = context;
             }
-            public async Task<ResponseDTO> Handle(UpdatePersonaCommand request, CancellationToken cancellationToken)
+            public async Task<ResponseDTO> Handle(UpdateClienteCommand request, CancellationToken cancellationToken)
             {
                 ResponseDTO respuesta = new ResponseDTO();
-                string error = "Error Editando Persona";
+                string error = "Error Editando Cliente";
 
                 try
                 {
-                    var GetPersona = await _context.Personas.Where(u => u.PersonaId == request.IdPersona)
+                    var GetCliente = await _context.Clientes.Where(u => u.ClienteId == request.IdCliente)
                         .FirstOrDefaultAsync();
 
-                    if (GetPersona == null)
+                    if (GetCliente == null)
                     {
-                        error = "Persona No existe";
+                        error = "Cliente No existe";
                         respuesta.responseStatus = 404;
                         respuesta.responseData = new
                         {
@@ -44,27 +44,25 @@ namespace Banco.Service.Features.PersonaFeatures.Commands
                         return respuesta;
                     }
 
-                    GetPersona.Nombre = request.Persona.Nombre;
-                    GetPersona.Genero = request.Persona.Genero;
-                    GetPersona.Edad = request.Persona.Edad;
-                    GetPersona.Identificacion = request.Persona.Identificacion;
-                    GetPersona.Direccion = request.Persona.Direccion;
-                    GetPersona.Telefono = request.Persona.Telefono;
-                    _context.Personas.Update(GetPersona);
-                    var nroRegPersona = await _context.SaveChangesAsync(); //commit a la transaccion
+                    GetCliente.Estado = request.Cliente.Estado;
+                    GetCliente.Contrasenia = request.Cliente.Contrasenia;
 
-                    if (nroRegPersona > 0)
+                    _context.Clientes.Update(GetCliente);
+
+                    var nroRegCliente = await _context.SaveChangesAsync(); //commit a la transaccion
+
+                    if (nroRegCliente > 0)
                     {
                         respuesta.responseStatus = 200;
                         respuesta.responseData = new
                         {
-                            PersonaId = Convert.ToString(GetPersona.PersonaId)
+                            ClienteId = Convert.ToString(GetCliente.ClienteId)
                         };
 
                     }
                     else
                     {
-                        error = "Persona no Editada";
+                        error = "Cliente no Editada";
                         respuesta.responseStatus = 400;
                         respuesta.responseData = new
                         {
