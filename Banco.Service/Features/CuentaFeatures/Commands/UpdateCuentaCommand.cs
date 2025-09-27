@@ -1,46 +1,40 @@
 ﻿using Banco.Domain.DTO;
 using Banco.Domain.Entity;
 using Banco.Persistence;
-using Banco.Service.Features.ClienteFeatures.Queries;
-using Banco.Service.Features.PersonaFeatures.Queries;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 
-
-namespace Banco.Service.Features.ClienteFeatures.Commands
+namespace Banco.Service.Features.CuentaFeatures.Commands
 {
-    public class CreateClienteCommand : IRequest<ResponseDTO>
+    public class UpdateCuentaCommand : IRequest<ResponseDTO>
     {
-        public Cliente Cliente { get; set; }
+        public string NumeroCuenta { get; set; }
+        public Cuenta Cuenta { get; set; }
 
-        public class CreateClienteCommandHandler : IRequestHandler<CreateClienteCommand, ResponseDTO>
+        public class UpdateCuentaCommandHandler : IRequestHandler<UpdateCuentaCommand, ResponseDTO>
         {
             private readonly IApplicationDbContext _context;
 
-            public CreateClienteCommandHandler(
+            public UpdateCuentaCommandHandler(
                 IApplicationDbContext context
             )
             {
                 _context = context;
             }
-            public async Task<ResponseDTO> Handle(CreateClienteCommand request, CancellationToken cancellationToken)
+            public async Task<ResponseDTO> Handle(UpdateCuentaCommand request, CancellationToken cancellationToken)
             {
                 ResponseDTO respuesta = new ResponseDTO();
-                string error = "Error creando Cliente";
+                string error = "Error Editando Cuenta";
 
                 try
                 {
-                    
-
-                    //Verifica si ya existe el Cliente registrado
-                    var GetCliente = await _context.Clientes.Where(u => u.ClienteId == request.Cliente.ClienteId
-                                                                        && u.Contrasenia == request.Cliente.Contrasenia)
+                    var GetCuenta = await _context.Cuentas.Where(u => u.NumeroCuenta == request.NumeroCuenta)
                         .FirstOrDefaultAsync();
 
-                    if (GetCliente != null)
+                    if (GetCuenta == null)
                     {
-                        error = "Ya existe una Cliente con los datos suministrados.";
+                        error = "Cuenta No existe";
                         respuesta.responseStatus = 404;
                         respuesta.responseData = new
                         {
@@ -50,26 +44,28 @@ namespace Banco.Service.Features.ClienteFeatures.Commands
                         return respuesta;
                     }
 
-                    Cliente cliente = request.Cliente;
+                    GetCuenta.Estado = request.Cuenta.Estado;
+                    GetCuenta.ClienteId = request.Cuenta.ClienteId;
+                    GetCuenta.TipoCuenta = request.Cuenta.TipoCuenta;
+                    GetCuenta.SaldoInicial = request.Cuenta.SaldoInicial;
+                    GetCuenta.Estado = request.Cuenta.Estado;
 
-                    _context.Clientes.Add(cliente);
+                    _context.Cuentas.Update(GetCuenta);
 
-                    var nroRegUsario = await _context.SaveChangesAsync(); //commit a la transaccion
+                    var nroRegCuenta = await _context.SaveChangesAsync(); //commit a la transaccion
 
-                    if (nroRegUsario > 0)
+                    if (nroRegCuenta > 0)
                     {
-                        
-
                         respuesta.responseStatus = 200;
                         respuesta.responseData = new
                         {
-                            ClienteId = Convert.ToString(cliente.ClienteId)
+                            CuentaId = Convert.ToString(GetCuenta.NumeroCuenta)
                         };
 
                     }
                     else
                     {
-                        error = "la Cliente no fue creada";
+                        error = "Cuenta no Editada";
                         respuesta.responseStatus = 400;
                         respuesta.responseData = new
                         {

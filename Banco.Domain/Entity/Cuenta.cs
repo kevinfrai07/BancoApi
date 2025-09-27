@@ -11,11 +11,9 @@ namespace Banco.Domain.Entity
     {
         [Key]
         public string NumeroCuenta { get; set; } = string.Empty;
+        public int ClienteId { get; set; }
         public string TipoCuenta { get; set; } = string.Empty;
         public decimal SaldoInicial { get; set; }
         public string Estado { get; set; } = string.Empty;
-
-        // Relación 1:N con Movimientos
-        public ICollection<Movimiento> Movimientos { get; set; } = new List<Movimiento>();
     }
 }

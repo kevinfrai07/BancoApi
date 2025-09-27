@@ -16,8 +16,5 @@ namespace Banco.Domain.Entity
         public string TipoMovimiento { get; set; } = string.Empty;
         public decimal Valor { get; set; }
         public decimal? Saldo { get; set; }
-
-        // Relación con Cuenta
-        public Cuenta Cuenta { get; set; } = null!;
     }
 }

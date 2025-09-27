@@ -2,45 +2,48 @@
 using Banco.Domain.Entity;
 using Banco.Persistence;
 using Banco.Service.Features.ClienteFeatures.Queries;
+using Banco.Service.Features.CuentaFeatures.Queries;
 using Banco.Service.Features.PersonaFeatures.Queries;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 
 
-namespace Banco.Service.Features.ClienteFeatures.Commands
+namespace Banco.Service.Features.CuentaFeatures.Commands
 {
-    public class CreateClienteCommand : IRequest<ResponseDTO>
+    public class CreateCuentaCommand : IRequest<ResponseDTO>
     {
-        public Cliente Cliente { get; set; }
+        public Cuenta Cuenta { get; set; }
 
-        public class CreateClienteCommandHandler : IRequestHandler<CreateClienteCommand, ResponseDTO>
+        public class CreateCuentaCommandHandler : IRequestHandler<CreateCuentaCommand, ResponseDTO>
         {
             private readonly IApplicationDbContext _context;
+            readonly IMediator _mediator;
 
-            public CreateClienteCommandHandler(
-                IApplicationDbContext context
+            public CreateCuentaCommandHandler(
+                IApplicationDbContext context,
+                IMediator mediator
             )
             {
                 _context = context;
+                _mediator = mediator;
             }
-            public async Task<ResponseDTO> Handle(CreateClienteCommand request, CancellationToken cancellationToken)
+            public async Task<ResponseDTO> Handle(CreateCuentaCommand request, CancellationToken cancellationToken)
             {
                 ResponseDTO respuesta = new ResponseDTO();
-                string error = "Error creando Cliente";
+                string error = "Error creando Cuenta";
 
                 try
                 {
                     
 
-                    //Verifica si ya existe el Cliente registrado
-                    var GetCliente = await _context.Clientes.Where(u => u.ClienteId == request.Cliente.ClienteId
-                                                                        && u.Contrasenia == request.Cliente.Contrasenia)
+                    //Verifica si ya existe el Cuenta registrado
+                    var GetCuenta = await _context.Cuentas.Where(u => u.NumeroCuenta == request.Cuenta.NumeroCuenta)
                         .FirstOrDefaultAsync();
 
-                    if (GetCliente != null)
+                    if (GetCuenta != null)
                     {
-                        error = "Ya existe una Cliente con los datos suministrados.";
+                        error = "Ya existe una Cuenta con los datos suministrados.";
                         respuesta.responseStatus = 404;
                         respuesta.responseData = new
                         {
@@ -50,9 +53,9 @@ namespace Banco.Service.Features.ClienteFeatures.Commands
                         return respuesta;
                     }
 
-                    Cliente cliente = request.Cliente;
+                    Cuenta Cuenta = request.Cuenta;
 
-                    _context.Clientes.Add(cliente);
+                    _context.Cuentas.Add(Cuenta);
 
                     var nroRegUsario = await _context.SaveChangesAsync(); //commit a la transaccion
 
@@ -63,13 +66,13 @@ namespace Banco.Service.Features.ClienteFeatures.Commands
                         respuesta.responseStatus = 200;
                         respuesta.responseData = new
                         {
-                            ClienteId = Convert.ToString(cliente.ClienteId)
+                            CuentaId = Convert.ToString(Cuenta.NumeroCuenta)
                         };
 
                     }
                     else
                     {
-                        error = "la Cliente no fue creada";
+                        error = "la Cuenta no fue creada";
                         respuesta.responseStatus = 400;
                         respuesta.responseData = new
                         {
