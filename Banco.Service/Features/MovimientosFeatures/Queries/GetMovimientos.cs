@@ -43,7 +43,7 @@ namespace Banco.Service.Features.MovimientosFeatures.Queries
                                             TipoCuenta = temp.c.TipoCuenta,
                                             SaldoInicial = temp.c.SaldoInicial,
                                             Estado = temp.c.Estado,
-                                            Movimiento = $"{temp.m.TipoMovimiento} de {temp.m.Valor}", // 👈 texto del movimiento
+                                            Movimiento = $"{temp.m.TipoMovimiento} de {temp.m.Valor}",
                                             Cliente = pe.Nombre
                                         })
                                     .ToListAsync();

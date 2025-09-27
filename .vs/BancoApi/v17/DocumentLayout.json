@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.service\\features\\movimientosfeatures\\queries\\getmovimientosbycliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|solutionrelative:banco.service\\features\\movimientosfeatures\\queries\\getmovimientosbycliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\bancoapi\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|solutionrelative:bancoapi\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.service\\features\\movimientosfeatures\\queries\\getmovimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|solutionrelative:banco.service\\features\\movimientosfeatures\\queries\\getmovimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.domain\\dto\\movimientobyclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|solutionrelative:banco.domain\\dto\\movimientobyclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.domain\\entity\\movimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|solutionrelative:banco.domain\\entity\\movimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\bancoapi\\controllers\\movimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1A10375-B76A-435D-B499-4CA14D4914CD}|BancoAPI\\BancoAPI.csproj|solutionrelative:bancoapi\\controllers\\movimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.service\\features\\movimientosfeatures\\commands\\createmovimientoscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|solutionrelative:banco.service\\features\\movimientosfeatures\\commands\\createmovimientoscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.domain\\dto\\movimientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|solutionrelative:banco.domain\\dto\\movimientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.service\\features\\movimientosfeatures\\queries\\getmovimientosbycliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|solutionrelative:banco.service\\features\\movimientosfeatures\\queries\\getmovimientosbycliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.service\\features\\cuentafeatures\\commands\\createcuentacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|solutionrelative:banco.service\\features\\cuentafeatures\\commands\\createcuentacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.domain\\dto\\movimientobyclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|solutionrelative:banco.domain\\dto\\movimientobyclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.service\\features\\movimientosfeatures\\queries\\getmovimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F8B561-C4F8-4E6C-AF14-CCD2048CEEA6}|Banco.Service\\Banco.Service.csproj|solutionrelative:banco.service\\features\\movimientosfeatures\\queries\\getmovimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.domain\\entity\\movimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|solutionrelative:banco.domain\\entity\\movimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|c:\\users\\kevin fraile\\source\\repos\\bancoapi\\banco.domain\\dto\\movimientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FEE1AB-4F51-4414-A52F-EC23FCA00EA6}|Banco.Domain\\Banco.Domain.csproj|solutionrelative:banco.domain\\dto\\movimientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,19 +51,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CuentaController.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Controllers\\CuentaController.cs",
+              "RelativeDocumentMoniker": "BancoAPI\\Controllers\\CuentaController.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Controllers\\CuentaController.cs",
+              "RelativeToolTip": "BancoAPI\\Controllers\\CuentaController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAwDUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T01:06:13.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MovimientosController.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Controllers\\MovimientosController.cs",
+              "RelativeDocumentMoniker": "BancoAPI\\Controllers\\MovimientosController.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\BancoAPI\\Controllers\\MovimientosController.cs",
+              "RelativeToolTip": "BancoAPI\\Controllers\\MovimientosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T00:55:51.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "GetMovimientosByCliente.cs",
               "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Service\\Features\\MovimientosFeatures\\Queries\\GetMovimientosByCliente.cs",
               "RelativeDocumentMoniker": "Banco.Service\\Features\\MovimientosFeatures\\Queries\\GetMovimientosByCliente.cs",
               "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Service\\Features\\MovimientosFeatures\\Queries\\GetMovimientosByCliente.cs",
               "RelativeToolTip": "Banco.Service\\Features\\MovimientosFeatures\\Queries\\GetMovimientosByCliente.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwCUAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-27T00:27:06.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "MovimientoByClienteDTO.cs",
               "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\DTO\\MovimientoByClienteDTO.cs",
               "RelativeDocumentMoniker": "Banco.Domain\\DTO\\MovimientoByClienteDTO.cs",
@@ -68,20 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MovimientoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\DTO\\MovimientoDTO.cs",
-              "RelativeDocumentMoniker": "Banco.Domain\\DTO\\MovimientoDTO.cs",
-              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\DTO\\MovimientoDTO.cs",
-              "RelativeToolTip": "Banco.Domain\\DTO\\MovimientoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T00:22:08.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "CreateCuentaCommand.cs",
               "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Service\\Features\\CuentaFeatures\\Commands\\CreateCuentaCommand.cs",
               "RelativeDocumentMoniker": "Banco.Service\\Features\\CuentaFeatures\\Commands\\CreateCuentaCommand.cs",
@@ -102,20 +123,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "CreateMovimientosCommand.cs",
               "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Service\\Features\\MovimientosFeatures\\Commands\\CreateMovimientosCommand.cs",
               "RelativeDocumentMoniker": "Banco.Service\\Features\\MovimientosFeatures\\Commands\\CreateMovimientosCommand.cs",
               "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Service\\Features\\MovimientosFeatures\\Commands\\CreateMovimientosCommand.cs",
               "RelativeToolTip": "Banco.Service\\Features\\MovimientosFeatures\\Commands\\CreateMovimientosCommand.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-27T00:15:48.406Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
+              "Title": "MovimientoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\DTO\\MovimientoDTO.cs",
+              "RelativeDocumentMoniker": "Banco.Domain\\DTO\\MovimientoDTO.cs",
+              "ToolTip": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\DTO\\MovimientoDTO.cs",
+              "RelativeToolTip": "Banco.Domain\\DTO\\MovimientoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T00:22:08.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "GetMovimientos.cs",
               "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Service\\Features\\MovimientosFeatures\\Queries\\GetMovimientos.cs",
               "RelativeDocumentMoniker": "Banco.Service\\Features\\MovimientosFeatures\\Queries\\GetMovimientos.cs",
@@ -128,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Movimientos.cs",
               "DocumentMoniker": "C:\\Users\\Kevin Fraile\\source\\repos\\BancoApi\\Banco.Domain\\Entity\\Movimientos.cs",
               "RelativeDocumentMoniker": "Banco.Domain\\Entity\\Movimientos.cs",

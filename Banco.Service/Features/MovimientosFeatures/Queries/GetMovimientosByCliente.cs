@@ -9,6 +9,7 @@ namespace Banco.Service.Features.MovimientosFeatures.Queries
 {
     public class GetMovimientosByCliente : IRequest<ResponseDTO>
     {
+        public int clienteId { get; set; }
         public class GetUsersHandler : IRequestHandler<GetMovimientosByCliente, ResponseDTO>
         {
             private readonly IApplicationDbContext _context;
@@ -34,6 +35,7 @@ namespace Banco.Service.Features.MovimientosFeatures.Queries
                                                 temp => temp.c.ClienteId,
                                                 cl => cl.ClienteId,
                                                 (temp, cl) => new { temp.m, temp.c, cl })
+                                            .Where(cl => cl.cl.ClienteId == request.clienteId)
                                             .Join(_context.Personas,
                                                 temp => temp.cl.PersonaId,
                                                 pe => pe.PersonaId,
